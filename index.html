@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MilesLog — Daily mileage tracker for business expenses and IRS deductions">
+  <title>MilesLog — Business Mileage Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- Sidebar Navigation -->
+  <aside id="sidebar">
+    <div class="sidebar-logo">
+      <span class="sidebar-logo-icon">🚗</span>
+      <div>
+        <span class="sidebar-logo-text">MilesLog</span>
+        <span class="sidebar-logo-sub">Business Mileage Tracker</span>
+      </div>
+    </div>
+    <nav class="nav-list" aria-label="Main navigation"></nav>
+  </aside>
+
+  <!-- Sidebar overlay for mobile -->
+  <div id="sidebar-overlay" aria-hidden="true"></div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <span id="mobile-title">Dashboard</span>
+    </header>
+
+    <!-- View Panels -->
+    <main>
+      <div id="view-dashboard" class="view-panel hidden"></div>
+      <div id="view-trips"     class="view-panel hidden"></div>
+      <div id="view-fuel"      class="view-panel hidden"></div>
+      <div id="view-projects"  class="view-panel hidden"></div>
+      <div id="view-reports"   class="view-panel hidden"></div>
+      <div id="view-settings"  class="view-panel hidden"></div>
+    </main>
+
+  </div>
+
+</div>
+
+<!-- Bottom Navigation (Mobile) -->
+<nav id="bottom-nav" aria-label="Bottom navigation"></nav>
+
+<!-- Toast Notifications -->
+<div id="toast-container" aria-live="polite"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
